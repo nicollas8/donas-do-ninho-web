@@ -75,7 +75,7 @@ footer{
 }
 
 footer img:first-child{
-    width: 13%;
+    width: 6%;
 }
 
 footer img:nth-child(2){
@@ -88,5 +88,36 @@ footer img:nth-child(3){
     width: 2vw;
     height: 4vh;
     
+}
+
+#coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+#images{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+#images img{
+    width: 30px;
+    height: 30px;   
+}
+
+#images p{
+    margin-left: 5px;
+    font-size: 15px;
+    
+}
+
+#images a{
+    font-size: 15px;
+    margin-left: auto;
+    color: white;
+    text-decoration: none;
 }
 /* // aaaaaaaa  */
