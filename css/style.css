@@ -19,7 +19,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: #fcb3a6;
+    background: white;
 }
 
 header img:first-child {
@@ -27,8 +27,8 @@ header img:first-child {
     width: 15%;
 }
 
-header img:nth-child(2) {
-    width: 10%;
+header div {
+    align-self: center;
 }
 
 main {
