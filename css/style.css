@@ -1,123 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-    background: rgb(252,179,166);
-    background: linear-gradient(0deg, rgba(255, 234, 190,1) 0%, rgba(249,101,129,1) 100%);
-    font-size: 1.2em;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: #fff0d1;
-    border-radius: 0 0 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  background: #EE7F7F;
+  height: 25vh;
 }
 
-header img:first-child {
-    margin: auto;
-    width: 15%;
+header img {
+  width: 50%;
+  filter: drop-shadow(2px 2px 5px #000000);
 }
 
-header div {
-    align-self: center;
+section div {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+}
+
+section div img {
+  width: 10%;
 }
 
 main {
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  background: #FBE4CB;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-section:first-child {
-    display: flex;
-    justify-content: center;
+main section:nth-child(1) {
+  display: flex;
+  justify-content: center;
 }
 
-section:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+main section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 20px;
 }
 
-section:nth-child(2) button {
-    width: 25%;
-    padding: 0.7rem 0.5rem;
-    border-radius: 18px;
-    color: black;
-    font-weight: 600;
-    background: rgb(250, 134, 134);
-    border: 2   px solid #fff;
-    font-size: 17px;
+main section:nth-child(2) a {
+  text-align: center;
+  width: 50%;
+  background: #EE7F7F;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+section {
+  width: 45vw;
 }
 
 section img {
-    width: 45%;
+  display: flex;
+  width: 20vw;
 }
 
-footer{
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
-    background-color: rgb(249,101,129);
-    border-radius: 2rem 2rem 0 0;
-    height: 15vh;
+footer {
+  width: 100%;
+  background: #EE7F7F;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px;
 }
 
-footer img:first-child{
-    width: 6%;
+footer section:nth-child(1) {
+  border-bottom: 2px solid black;
 }
 
-footer img:nth-child(2){
-    width: 2vw;
-    height: 4vh;
-    
+footer section:nth-child(1) #logoFooter {
+  width: 20%;
+  filter: drop-shadow(2px 2px 5px #000000);
 }
 
-footer img:nth-child(3){
-    width: 2vw;
-    height: 4vh;
-    
+footer .social img {
+  display: flex;
+  justify-content: end;
+  width: 5%;
 }
 
-#coluna{
+footer section:nth-child(2) {
+  margin-top: 1rem;
+}
+
+footer section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  footer section:nth-child(1) #logoFooter {
+    width: 30%;
+  }
+  footer section:nth-child(1) img {
+    width: 10%;
+  }
+
+  :is(footer section:nth-child(2)) a, p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
     display: flex;
     flex-direction: column;
-}
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
 
-#images{
+
+  main section:nth-child(1) img{
+    width: 80%;
+  }
+
+  main section:nth-child(2) {
     display: flex;
     align-items: center;
-    text-align: center;
-    padding: 5px;
-    color: white;
-}
+    width: 90%;
+    gap: 30px
+  }
 
-#images img{
-    width: 30px;
-    height: 30px;   
-}
+  main section:nth-child(2) a {
+    align-items: center;
+    width: 100%;
+  }
 
-#images p{
-    margin-left: 5px;
-    font-size: 15px;
-    
-}
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
 
-#images a{
-    font-size: 15px;
-    margin-left: auto;
-    color: white;
-    text-decoration: none;
+  footer section:nth-child(1) #logoFooter {
+    display: none;
+  }
+
+  footer section:nth-child(1) img {
+    width: 15%;
+  }
+
+  footer section:nth-child(1) {
+    padding: 1.5rem;
+  }
+
+  footer section {
+    flex-direction: column;
+  }
+
+  footer .social {
+    justify-content: center;
+  }
+
+  footer section:nth-child(2) {
+    display: flex;
+    gap: 10px;
+  }
 }
-/* // aaaaaaaa  */
