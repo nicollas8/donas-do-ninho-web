@@ -5,20 +5,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
 }
 
 header {
   display: flex;
   justify-content: center;
-  background: #EE7F7F;
+  background: #ffb4b4;
   height: 25vh;
 }
 
 header img {
   width: 50%;
-  filter: drop-shadow(2px 2px 5px #000000);
+  filter: drop-shadow(3px 0px 1px white);
 }
 
 section div {
@@ -61,6 +61,14 @@ main section:nth-child(2) a {
   border-radius: 8px;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
 section {
   width: 45vw;
 }
@@ -72,7 +80,7 @@ section img {
 
 footer {
   width: 100%;
-  background: #EE7F7F;
+  background: #ffb4b4;
   display: flex;
   flex-direction: column;
   padding: 10px 50px;
@@ -84,13 +92,13 @@ footer section:nth-child(1) {
 
 footer section:nth-child(1) #logoFooter {
   width: 20%;
-  filter: drop-shadow(2px 2px 5px #000000);
+  filter: drop-shadow(3px 0px 1px white);
 }
 
 footer .social img {
   display: flex;
   justify-content: end;
-  width: 5%;
+  width: 4%;
 }
 
 footer section:nth-child(2) {
@@ -135,12 +143,12 @@ footer section {
     width: 30%;
   }
   footer section:nth-child(1) img {
-    width: 10%;
+    width: 7%;
   }
 
   :is(footer section:nth-child(2)) a,
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -155,6 +163,7 @@ footer section {
     align-items: center;
     justify-content: center;
     padding: 40px 0;
+    height: 50%;
     gap: 30px;
   }
 
@@ -174,6 +183,10 @@ footer section {
     width: 100%;
   }
 
+  h4 {
+    font-size: 1.5rem;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
@@ -184,7 +197,7 @@ footer section {
   }
 
   footer section:nth-child(1) img {
-    width: 15%;
+    width: 12%;
   }
 
   footer section:nth-child(1) {
