@@ -3,7 +3,7 @@ const email = document.getElementById("email")
 const dowload = document.getElementById("dowload")
 
 dowload.addEventListener('click', () => {
-  location.href = "https://drive.google.com/file/d/10sSFKXIwm0Rpb5ztYWWZ7ay7G7exc7wq/view?usp=sharing"
+  location.href = "https://drive.google.com/file/d/1RBsLfXQBskGlVgGFR7sWqeQe9USUZqbA/view?usp=sharing"
 })
 
 insta.addEventListener('click', () =>{
